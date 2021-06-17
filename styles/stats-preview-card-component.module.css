@@ -1,0 +1,70 @@
+.container {
+  background-color: hsl(233, 47%, 7%);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  font-size: 15px;
+}
+
+.container .card {
+  background-color: hsl(244, 38%, 16%);
+  margin: auto auto;
+  display: flex;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.container .card .readSide {
+  width: 50%;
+}
+
+.container .textBox {
+  padding: 37px;
+}
+
+.textBox h3 {
+  color: hsl(0, 0%, 100%);
+  font-family: Inter;
+  src: url(https://fonts.google.com/specimen/Inter);
+  font-weight: bold;
+  font-weight: 700;
+  font-size: 32px;
+  margin: 0 0;
+}
+
+.textBox span {
+  color: #aa5cdb;
+  font-family: Inter;
+  src: url(https://fonts.google.com/specimen/Inter);
+  font-weight: bold;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.textBox p {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: Lexend Deca;
+  src: url(https://fonts.google.com/specimen/Lexend+Deca);
+  font-weight: bold;
+  font-weight: 400;
+}
+
+.container .imageSide {
+  flex-grow: 1;
+  overflow: hidden;
+  background: linear-gradient(to right, #9930dbbb, #9930dbbb),
+    url('/images/image-header-desktop.jpg') no-repeat;
+}
+
+.container .Canters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container .Canters p {
+  margin: 0 0;
+}
+
+.container .valueRow {
+  display: flex;
+}
