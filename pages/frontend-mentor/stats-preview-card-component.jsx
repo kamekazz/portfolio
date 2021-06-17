@@ -17,7 +17,7 @@ const ReadSide = () => {
       <div className={styles.textBox}>
         <div>
           <h3>
-            Get <span>insights</span> that help <br /> your business grow.
+            Get <span>insights</span> that help your business grow.
           </h3>
           <p>
             discover the benefits of data analytics and made better decisions
@@ -44,7 +44,7 @@ const Canter = ({ amount, type, value }) => {
     from: { opacity: 0, val: 0, color: '#ffffff' },
   });
   return (
-    <div>
+    <div className={styles.valueComponent}>
       <div className={styles.valueRow}>
         <animated.h3>{props.val.to((val) => Math.floor(val))}</animated.h3>
         <animated.h3 style={props}>{value}</animated.h3>
