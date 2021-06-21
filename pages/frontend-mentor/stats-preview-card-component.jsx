@@ -15,37 +15,24 @@ export default function StatsPreviewComponent() {
 
 const ReadSide = () => {
   return (
-    <>
-      <head>
-        <Head>
-          <title>stats-preview-card-component</title>
-          <meta
-            name="viewport"
-            content="initial-scale=1.0, width=device-width"
-          />
-          <meta httpEquiv="content-language" content="en-us" />
-          <meta charSet="utf-8" />
-        </Head>
-      </head>
-      <div className={styles.readSide}>
-        <div className={styles.textBox}>
-          <div>
-            <h3>
-              Get <span>insights</span> that help your business grow.
-            </h3>
-            <p>
-              discover the benefits of data analytics and made better decisions
-              regarding revenue,customer,experience,and overall efficiency
-            </p>
-          </div>
-          <div className={styles.Canters}>
-            <Canter amount={10} type={'companies'} value={'K+'} />
-            <Canter amount={314} type={'Templates'} value={''} />
-            <Canter amount={12} type={'Queries'} value={'M+'} />
-          </div>
+    <div className={styles.readSide}>
+      <div className={styles.textBox}>
+        <div>
+          <h3>
+            Get <span>insights</span> that help your business grow.
+          </h3>
+          <p>
+            discover the benefits of data analytics and made better decisions
+            regarding revenue,customer,experience,and overall efficiency
+          </p>
+        </div>
+        <div className={styles.Canters}>
+          <Canter amount={10} type={'companies'} value={'K+'} />
+          <Canter amount={314} type={'Templates'} value={''} />
+          <Canter amount={12} type={'Queries'} value={'M+'} />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
