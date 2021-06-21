@@ -23,6 +23,7 @@ const ReadSide = () => {
             name="viewport"
             content="initial-scale=1.0, width=device-width"
           />
+          <meta httpEquiv="content-language" content="en-us" />
         </Head>
       </head>
       <div className={styles.readSide}>
