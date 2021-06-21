@@ -1,5 +1,7 @@
 import styles from '../../styles/stats-preview-card-component.module.css';
 import { useSpring, animated } from 'react-spring';
+import Head from 'next/head';
+
 export default function StatsPreviewComponent() {
   return (
     <div className={styles.container}>
@@ -13,24 +15,35 @@ export default function StatsPreviewComponent() {
 
 const ReadSide = () => {
   return (
-    <div className={styles.readSide}>
-      <div className={styles.textBox}>
-        <div>
-          <h3>
-            Get <span>insights</span> that help your business grow.
-          </h3>
-          <p>
-            discover the benefits of data analytics and made better decisions
-            regarding revenue,customer,experience,and overall efficiency
-          </p>
-        </div>
-        <div className={styles.Canters}>
-          <Canter amount={10} type={'companies'} value={'K+'} />
-          <Canter amount={314} type={'Templates'} value={''} />
-          <Canter amount={12} type={'Queries'} value={'M+'} />
+    <>
+      <head>
+        <Head>
+          <title>stats-preview-card-component</title>
+          <meta
+            name="viewport"
+            content="initial-scale=1.0, width=device-width"
+          />
+        </Head>
+      </head>
+      <div className={styles.readSide}>
+        <div className={styles.textBox}>
+          <div>
+            <h3>
+              Get <span>insights</span> that help your business grow.
+            </h3>
+            <p>
+              discover the benefits of data analytics and made better decisions
+              regarding revenue,customer,experience,and overall efficiency
+            </p>
+          </div>
+          <div className={styles.Canters}>
+            <Canter amount={10} type={'companies'} value={'K+'} />
+            <Canter amount={314} type={'Templates'} value={''} />
+            <Canter amount={12} type={'Queries'} value={'M+'} />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
