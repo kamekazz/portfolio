@@ -24,6 +24,7 @@ const ReadSide = () => {
             content="initial-scale=1.0, width=device-width"
           />
           <meta httpEquiv="content-language" content="en-us" />
+          <meta charSet="utf-8" />
         </Head>
       </head>
       <div className={styles.readSide}>
