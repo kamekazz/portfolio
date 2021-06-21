@@ -25,9 +25,9 @@ const ReadSide = () => {
           </p>
         </div>
         <div className={styles.Canters}>
-          <Canter amount={10} type={'companies'} value={'K'} />
+          <Canter amount={10} type={'companies'} value={'K+'} />
           <Canter amount={314} type={'Templates'} value={''} />
-          <Canter amount={12} type={'Queries'} value={'M'} />
+          <Canter amount={12} type={'Queries'} value={'M+'} />
         </div>
       </div>
     </div>
